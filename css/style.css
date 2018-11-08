@@ -16,6 +16,7 @@ h2{
 p{
   font-size: 20px;
 }
+
 .btn-outline-primary{
   border-color: #b70038;
   color:#b70038;
@@ -25,10 +26,23 @@ p{
   vertical-align: middle;
   padding: 6px 20px;
 }
+
 .btn-outline-primary:hover{
   border-color: #b70038;
   background-color: #b70038;
 }
+.btn-outline-primary:active{
+  background-color: #b70038 !important;
+  border-color: #b70038 !important;
+  box-shadow: none !important;
+}
+.btn-outline-primary:focus{
+  box-shadow: none;
+}
+.btn:focus{
+  box-shadow: none;
+}
+
 .container-fluid{
   margin: 0;
   padding: 0;
@@ -89,8 +103,15 @@ p{
   border-radius: 0;
   border: 0;
 }
+.text-card{
+  height: 288px;
+}
 .row{
   height: inherit;
+  margin: 0;
+}
+.col{
+  padding: 0;
 }
 .card-img{
   background-image: url("../assets/image/burger1.jpg");
@@ -101,13 +122,22 @@ p{
 }
 .card-text{
   padding: 40px !important;
-  height: inherit;
+}
+.card-paragraph{
+  height: 305px;
   overflow: hidden;
+}
+.card-more{
+  position: absolute;
+  right: 40px;
 }
 
 /* Profile */
 .profile{
-  width: inherit;
+  width: 488.5px;
+}
+.profile-image-col{
+  width: 11px !important;
 }
 .profile-image{
   border-radius: 100%;
