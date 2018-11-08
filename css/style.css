@@ -1,0 +1,130 @@
+/*
+red:#b70038
+background:#f1f2f2
+border:#D0D2D3
+grey: #656666
+*/
+body{
+  font-family: Calibre;
+  background: #f1f2f2;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 500;
+}
+p{
+  font-size: 20px;
+}
+.btn-outline-primary{
+  border-color: #b70038;
+  color:#b70038;
+  font-size: 20px;
+  font-weight: 500;
+  height: 36px;
+  vertical-align: middle;
+  padding: 6px 20px;
+}
+.btn-outline-primary:hover{
+  border-color: #b70038;
+  background-color: #b70038;
+}
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+/* Navigation Bar */
+.navbar{
+  height: 80px;
+  padding: 0;
+  background-color: white;
+  border-bottom: 1px solid #D0D2D3;
+}
+/* Logo */
+.navbar-brand{
+  border-right: 1px solid #D0D2D3;
+  height: 80px;
+}
+.navbar-brand:hover{
+  background-color: #b70038;
+  height: 80px;
+}
+.navbar-brand:hover .zagat-logo-paths {
+  fill: white;
+}
+
+/* Search */
+.form-inline{
+  display: inline;
+}
+.form-control{
+  height: 80px;
+  width: 500px !important;
+  border-radius: 0;
+  border: 0;
+  border-right: 1px solid #D0D2D3;
+  background-color: inherit;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-right: 1px solid #D0D2D3;
+  background-color: inherit;
+}
+/* Links */
+.nav-link{
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #656666;
+  padding-left: 10px;
+}
+.nav-item:hover{
+  color: #b70038;
+}
+
+/* Cards */
+.card{
+  margin: 32px 10vw;
+  height: 40vw;
+  border-radius: 0;
+  border: 0;
+}
+.row{
+  height: inherit;
+}
+.card-img{
+  background-image: url("../assets/image/burger1.jpg");
+  border-radius: 0;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+}
+.card-text{
+  padding: 40px !important;
+  height: inherit;
+  overflow: hidden;
+}
+
+/* Profile */
+.profile{
+  width: inherit;
+}
+.profile-image{
+  border-radius: 100%;
+  width: 48px;
+}
+.profile-username{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 3px 0 0 0;
+}
+.profile-description{
+  font-size: 15px;
+  font-weight: 400;
+  margin: 8px 0 0 8px;
+}
+.subscript{
+  font-size: 15px;
+  font-weight: 400;
+  color: #656666;
+}
