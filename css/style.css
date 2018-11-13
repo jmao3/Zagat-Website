@@ -30,8 +30,10 @@ p{
 .small-p{
   font-size: 15px;
 }
+b{
+  font-weight: 600;
+}
 img{
-  height: inherit;
   text-align: center;
 }
 .row{
@@ -64,6 +66,13 @@ img{
 }
 .btn:focus{
   box-shadow: none;
+}
+.message-btn{
+  border: 0;
+}
+.message-btn:hover{
+  background-color: inherit;
+  color: #b70038;
 }
 .container-fluid{
   margin: 0;
@@ -106,6 +115,19 @@ img{
   color: #b70038;
   border-bottom: 3px solid #b70038;
 }
+.post-subnav{
+  border: 0;
+  height: auto;
+  margin-bottom: 20px;
+}
+.post-subnav-link{
+  margin:0;
+  margin-right: 20px;
+  padding:0;
+}
+.post-subscript{
+  color: inherit !important;
+}
 /* Nav-Brand */
 .navbar-brand{
   border-right: 1px solid #D0D2D3;
@@ -143,13 +165,14 @@ img{
   border: 0;
 }
 .large-card{
-  margin: 32px;
+  margin: 32px 0px;
   padding: 40px;
 }
 .inside-card{
   height: 288px;
-  padding: 24px;
+  padding: 40px;
   border: 1px solid #D0D2D3;
+  margin-bottom: 20px;
 }
 .image-card{
   margin: 32px 10vw;
@@ -163,7 +186,13 @@ img{
   height: 160px;
   margin: 12px 24px;
 }
-
+.restaurant-card-small{
+  height: 87.5px;
+  border-bottom: 1px solid #D0D2D3;
+}
+.restaurant-image-box{
+  height: 87.5px;
+}
 .restaurant-score{
   height: 30px !important;
 }
@@ -195,7 +224,7 @@ img{
 }
 
 .inside-card .card-paragraph{
-  height: auto;
+  height: 82px;
   overflow: hidden;
 }
 .card-more{
@@ -215,6 +244,10 @@ img{
   border-radius: 100%;
   width: 48px;
 }
+.profile-image-large{
+  border-radius: 100%;
+  width: 200px;
+}
 .profile-username{
   font-size: 24px;
   font-weight: 500;
@@ -232,16 +265,26 @@ img{
 }
 
 /* Others */
-.map{
+.fix-on-page{
   position: fixed;
   right: 0;
 }
 
 .banner{
+  width: 100vw;
   height: 360px;
   background-color: white;
 }
 
 .square-row{
   height: 180px;
+}
+#banner-image{
+  position: absolute;
+  top: 80px;
+}
+.btns{
+  position: absolute;
+  right: 40px;
+  top: 40px;
 }
