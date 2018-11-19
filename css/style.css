@@ -78,6 +78,9 @@ img{
   margin: 0;
   padding: 0;
 }
+
+
+
 /* Navigation Bar */
 .navbar{
   height: 80px;
@@ -86,10 +89,22 @@ img{
   border-bottom: 1px solid #D0D2D3;
   justify-content: unset;
 }
-.subnav{
-  height: 60px;
-}
 
+.subnav{
+  border-top: 1px solid #D0D2D3;
+  width: 100vw;
+  height: 60px;
+
+}
+.navbar-tall{
+  height: auto;
+}
+.filter{
+  border-bottom: 0;
+  height: 60px;
+  width: 100vw;
+  background-color: #f1f2f2;
+}
 /* Nav-Links */
 .nav-link{
   font-size: 15px;
@@ -107,10 +122,6 @@ img{
   padding: 13px;
   margin: auto 20px;
 }
-/* .subnav-link:active{
-  color: #b70038;
-  border-bottom: 3px solid #b70038;
-} */
 .subnav-link-active{
   color: #b70038;
   border-bottom: 3px solid #b70038;
@@ -128,6 +139,8 @@ img{
 .post-subscript{
   color: inherit !important;
 }
+
+
 /* Nav-Brand */
 .navbar-brand{
   border-right: 1px solid #D0D2D3;
@@ -140,6 +153,7 @@ img{
 .navbar-brand:hover .zagat-logo-paths {
   fill: white;
 }
+
 
 /* Nav-Search */
 .form-inline{
@@ -158,6 +172,25 @@ img{
   border-right: 1px solid #D0D2D3;
   background-color: inherit;
 }
+
+
+/* Nav-Filters */
+.filter-box{
+  width: auto;
+  height: 30px;
+  padding: 5px 15px;
+  margin-left: 24px;
+  background-color: white;
+  border: 1px solid #656666;
+}
+.filter-text{
+  margin-top: 2px;
+}
+.filter-blank{
+  padding-right: 65px;
+}
+
+
 
 /* Cards */
 .card{
@@ -193,27 +226,20 @@ img{
 .restaurant-image-box{
   height: 87.5px;
 }
+.restaurant-card-small-name{
+  margin: 33px 10px;
+}
 .restaurant-score{
   height: 30px !important;
 }
 .zagat-circle{
   width: 18px;
 }
-
-/* .card-img{
-  background-image: url("../assets/image/burger1.jpg");
-  border-radius: 0;
-  height: inherit;
-  background-position: center;
-  background-size: cover;
-} */
-
 .card-image{
   width:100%;
   height:100%;
   object-fit: cover;
 }
-
 .card-text{
   padding: 40px !important;
   overflow: hidden;
@@ -232,6 +258,22 @@ img{
   right: 40px;
   bottom: 24px;
 }
+
+
+
+/* Text Boxes */
+.text-box-1{
+  height: 300px;
+}
+.text-box-2{
+  height: 100px;
+  margin-bottom: 10px;
+}
+.text-box-3{
+  height: 48px;
+  overflow: hidden;
+}
+
 
 
 /* Profile */
@@ -264,27 +306,48 @@ img{
   color: #656666;
 }
 
-/* Others */
-.fix-on-page{
-  position: fixed;
-  right: 0;
-}
 
+
+/* Banner */
 .banner{
   width: 100vw;
-  height: 360px;
+  height: 450px;
   background-color: white;
-}
-
-.square-row{
-  height: 180px;
 }
 #banner-image{
   position: absolute;
   top: 80px;
 }
+.square-row{
+  height: 225px;
+}
+
+
+
+/* Map */
+.map{
+  height: 620px;
+}
+.fix-on-page{
+  position: fixed;
+  right: 0;
+}
+
+
+
+/* Others */
 .btns{
   position: absolute;
   right: 40px;
   top: 40px;
+}
+.more-center{
+  margin: 0 390px;
+}
+.three-restaurant{
+  height: auto;
+  border-bottom: 0;
+}
+.profile-page-down{
+  margin-top: 280px;
 }
