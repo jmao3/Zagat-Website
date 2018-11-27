@@ -81,6 +81,18 @@ img{
 .btn:focus{
   box-shadow: none;
 }
+.question-btn{
+  margin-right: 20px;
+}
+.question-btn-text{
+  position: relative;
+  bottom: 3px;
+}
+.a-modifier{
+  margin-top: 3px;
+  margin-left: auto;
+  margin-bottom: -10px;
+}
 .message-btn{
   border: 0;
 }
@@ -156,6 +168,7 @@ img{
   border: 0;
   height: auto;
   margin-bottom: 20px;
+  width: auto;
 }
 .post-subnav-link{
   margin:0;
@@ -240,6 +253,11 @@ img{
 
 
 /* Cards */
+.box{
+  border-radius: 0;
+  border: 0;
+  background-color: white;
+}
 .card{
   border-radius: 0;
   border: 0;
@@ -420,10 +438,13 @@ img{
   display: inline-block;
   width: auto;
   border: 1px solid #D0D2D3;
-  padding: 10px 20px;
+  padding: 12px 20px 10px 20px;
   margin-right: 10px;
 }
-
+a:hover .tag{
+  color: #b70038;
+  border-color: #b70038;
+}
 
 
 /* Others */
