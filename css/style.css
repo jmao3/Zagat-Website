@@ -8,10 +8,14 @@ body{
   font-family: Calibre;
   background: #f1f2f2;
 }
-
+h1{
+  font-size: 52px;
+  font-weight: 500;
+}
 h2{
   font-size: 36px;
   font-weight: 500;
+  margin: 0;
 }
 h3{
   font-size: 24px;
@@ -24,11 +28,21 @@ h4{
 h5{
   font-size: 15px;
 }
+a{
+  color: inherit;
+}
+a:hover{
+  color: #b70038;
+  text-decoration: none;
+}
 p{
   font-size: 20px;
 }
 .small-p{
   font-size: 15px;
+}
+.index-text{
+  color: white;
 }
 b{
   font-weight: 600;
@@ -89,22 +103,28 @@ img{
   border-bottom: 1px solid #D0D2D3;
   justify-content: unset;
 }
-
+.index-navbar{
+  background-color: inherit;
+  border-bottom: 1px solid white;
+}
 .subnav{
   border-top: 1px solid #D0D2D3;
+  border-bottom: 0;
   width: 100vw;
   height: 60px;
-
 }
 .navbar-tall{
   height: auto;
 }
 .filter{
+  border-top: 1px solid #D0D2D3;
   border-bottom: 0;
   height: 60px;
   width: 100vw;
   background-color: #f1f2f2;
 }
+
+
 /* Nav-Links */
 .nav-link{
   font-size: 15px;
@@ -113,8 +133,14 @@ img{
   color: #656666;
   padding-left: 10px;
 }
-.nav-link:hover{
+/* .nav-link:hover{
   color: #b70038;
+} */
+.index-nav-link{
+  color: white;
+}
+.index-nav-link:hover{
+  color: #f1f2f2;
 }
 .subnav-link{
   letter-spacing: normal;
@@ -140,20 +166,28 @@ img{
   color: inherit !important;
 }
 
-
 /* Nav-Brand */
 .navbar-brand{
   border-right: 1px solid #D0D2D3;
   height: 80px;
 }
+.index-navbar-brand{
+  border-right: 1px solid white;
+}
 .navbar-brand:hover{
   background-color: #b70038;
+  height: 80px;
+}
+.index-navbar-brand:hover{
+  background-color: rgba(256, 256, 256, 0.3);
   height: 80px;
 }
 .navbar-brand:hover .zagat-logo-paths {
   fill: white;
 }
-
+.index-zagat-logo-paths{
+  fill: white;
+}
 
 /* Nav-Search */
 .form-inline{
@@ -172,7 +206,9 @@ img{
   border-right: 1px solid #D0D2D3;
   background-color: inherit;
 }
-
+.index-form-control{
+  border-right: 1px solid white;
+}
 
 /* Nav-Filters */
 .filter-box{
@@ -197,9 +233,46 @@ img{
   border-radius: 0;
   border: 0;
 }
+.index-image-card{
+  height: 650px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../assets/image/burger1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.index-image-card-2{
+  height: 500px;
+  background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../assets/image/burger2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.index-image-card-3{
+  height: 500px;
+  background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../assets/image/burger3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .large-card{
   margin: 32px 0px;
   padding: 40px;
+}
+.tag-card{
+  border: 1px solid #D0D2D3;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.comment-card{
+  border: 1px solid #D0D2D3;
+  background-color: #f1f2f2;
+  padding: 30px auto;
+  margin-top: 20px;
+}
+.comment-link{
+  color: black;
+  text-decoration: underline;
+}
+.comment-link:hover{
+  text-decoration: underline;
 }
 .inside-card{
   height: 288px;
@@ -263,11 +336,12 @@ img{
 
 /* Text Boxes */
 .text-box-1{
-  height: 300px;
+  height: 330px;
+  overflow: hidden;
 }
 .text-box-2{
   height: 100px;
-  margin-bottom: 10px;
+  overflow: hidden;
 }
 .text-box-3{
   height: 48px;
@@ -350,4 +424,17 @@ img{
 }
 .profile-page-down{
   margin-top: 280px;
+}
+.right-bottom{
+  position: absolute;
+  right: 40px;
+  bottom: 32px;
+}
+.intext-image{
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.center-text{
+  text-align: center;
+  margin: 0;
 }
