@@ -25,38 +25,37 @@
         </svg>
         <h5 class="gourmet d-inline">Gourmet</h5>
       </a>
-      <a href="search-map.html">
-        <form class="form-inline">
-          <input class="form-control mb-0" type="search" placeholder="Find a great place near you">
-        </form>
-      </a>
+      <form class="form-inline" action="search-post.html">
+        <input class="form-control mb-0" type="search" placeholder="Find a great place near you">
+      </form>
       <a class="nav-link ml-auto" href="index.html">WHAT'S TRENDING</a>
       <a class="nav-link" href="#">ASK A QUESTION</a>
       <a class="nav-link" href="#" data-toggle="modal" data-target="#story">WRITE A STORY</a>
       <a class="nav-link" href="#">LOG IN/SIGN UP</a>
     </nav>
 
+    <!-- Modal -->
     <div class="modal fade" id="story" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog larger-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header p-0 my-2">
-            <!-- <form class="w-100 my-2" action="index.html" method="post">
-              <input class="form-text" placeholder="Your title goes here">
-            </form> -->
+            <h3>Best Restaurants Near the Santa Monica Pier</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body p-0">
-            <form class="my-2" action="index.html" method="post">
-              <input class="form-text" type="text" name="" value="">
+            <div class="text-edit">
+              <i class="fas fa-bold"></i>
+              <i class="fas fa-italic"></i>
+              <i class="fas fa-list-ol"></i>
+              <i class="fas fa-list-ul"></i>
+              <i class="fas fa-image"></i>
+              <i class="fas fa-link"></i>
+            </div>
+            <form class="m-0 a-form" action="individual-story.html" method="post">
+              <input class="form-text form-paragraph">
             </form>
-            <h3 class="mt-4 mb-3">If your question is already asked, please do not ask another one</h3>
-            <p class="my-2">What are the best burger places in San Francisco?</p>
-            <p class="my-2">What are the best burger places in San Francisco?</p>
-            <p class="my-2">What are the best burger places in San Francisco?</p>
-            <h2>Add Tags</h2>
-
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -65,30 +64,8 @@
         </div>
       </div>
     </div>
+    <!-- Navigation Ends Here -->
 
-
-
-
-
-    <!-- Modal -->
-    <div class="modal" id="sstory" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="" action="index.html" method="post">
-              <input type="text" placeholder="Your title goes here">
-            </form>
-          </div>
-          <div class="modal-footer">
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Image Card -->
     <div class="card image-card">
@@ -147,15 +124,20 @@
       <!-- profile row -->
       <div class="row profile mb-2">
         <div class="col-1 mr-4 p-0">
-          <img class="profile-image" src="../assets/profile/lucia.jpg" alt="">
+          <a href="#">
+            <img class="profile-image" src="../assets/profile/lucia.jpg" alt="">
+          </a>
         </div>
         <div class="col">
           <div class="row">
-            <h3 class="profile-username align-middle">Lucia</h3>
+            <a href="#">
+              <h3 class="profile-username align-middle">Lucia</h3>
+            </a>
             <h4 class="profile-description align-middle">EXPERT ON LOS ANGELES</h4>
+
           </div>
           <div class="row">
-            <h5 class="subscript">Written 5h ago</h5>
+            <h5 class="subscript">Answered 5h ago</h5>
           </div>
         </div>
         <div class="col-4">
@@ -173,8 +155,94 @@
       </h5>
     </div>
 
-    <!-- Text Card 2 -->
 
+
+    <!-- Text Card 2 -->
+    <div class="card text-card card-text">
+      <!-- title row -->
+      <h2><a href="individual-story.html">Burger of the Week: An American Hybrid at Pasadena's Magnolia House</a></h2>
+      <!-- profile row -->
+      <div class="row profile mb-2">
+        <div class="col-1 mr-4 p-0">
+          <a href="profile-jeff.html">
+            <img class="profile-image" src="../assets/profile/jeff.jpg" alt="">
+          </a>
+        </div>
+        <div class="col">
+          <div class="row">
+            <a href="profile-jeff.html">
+              <h3 class="profile-username align-middle">Jeff</h3>
+            </a>
+            <h4 class="profile-description align-middle">EXPERT ON BURGERS</h4>
+
+          </div>
+          <div class="row">
+            <h5 class="subscript">Written 5h ago</h5>
+          </div>
+        </div>
+        <div class="col-5">
+          <button class="btn btn-outline-primary"type="button" name="button">Follow</button>
+        </div>
+      </div>
+      <!-- text row -->
+      <div class="text-box-2">
+        <p>Welcome back to the Burger of the Week, a new feature in which we'll explore some of the best burgers — new and classic, undiscovered or celebrated — around the Southland. This week, a gooey cheeseburger deal from Pasadena's hidden Craftsman bungalow boite, Magnolia House.The Burger: If you're going to serve a burger around the corner from the iconic Pie 'N Burger, it better stand out. "We needed to have a burger that was flavorful and unique but still maintained the cheeseburger everyone loved growing up," says executive chef Kyu Yi. And he didn't start with the patty as a building block — he went straight to the cheese. "Since the owners and I wanted a burger that everyone is familiar with, I started by creating my own American cheese." That melty goodness is a blend of sharp cheddar, smoked Gouda and Gruyere, so it has a slightly smoky flavor. Once that was perfected, Yi worked on the beef patty, a house blend made with brisket and chuck for true beefy flavor, and rib-eye meat and fat for butteriness. For the bread holding it all together, he opted for a sweeter Portuguese bun, essentially a Hawaiian sweet roll, which adds balance to the savory, saltiness already going on. The rest is complete ingenuity. A classic burger usually has mayonnaise, ketchup, mustard and pickles as condiments, and his response is a dill pickle remoulade with fresh herbs, plus the addition of bourbon-caramelized onions and thick-cut Applewood bacon. "The bacon gives the burger the crispy texture it needs," the chef adds. "It just made the burger complete."</p>
+      </div>
+      <!-- more row -->
+      <h5 class="subscript align-right">
+        <a class="card-more"href="individual-story.html">Read More</a>
+      </h5>
+    </div>
+
+    <!-- Image Card 2 -->
+    <div class="card image-card">
+      <div class="row no-gutters">
+        <div class="col-6">
+          <img class="card-image" src="../assets/image/food1.jpg" alt="">
+        </div>
+        <div class="col-6 card-text">
+          <!-- title row -->
+          <a href="individual-question.html">
+            <h2>What are Los Angeles’s best new restaurants in 2018</h2>
+          </a>
+          <!-- profile row -->
+          <div class="row profile mb-2">
+            <div class="col-1 mr-4 p-0">
+              <a href="#">
+                <img class="profile-image" src="../assets/profile/alex.jpg" alt="Alex">
+              </a>
+            </div>
+            <div class="col">
+              <div class="row">
+                <a href="#">
+                  <h3 class="profile-username align-middle">Alex</h3>
+                </a>
+                <h4 class="profile-description align-middle">EXPERT ON LOS ANGELES</h4>
+
+              </div>
+              <div class="row">
+                <h5 class="subscript">Answered 5h ago</h5>
+              </div>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-outline-primary"type="button" name="button">Follow</button>
+            </div>
+          </div>
+          <!-- text row -->
+          <div class="text-box-1">
+            <p>It’s super-ironic given our international reputation as a health-conscious city, but there’s no doubt: When Angelenos take a cheat day, they eat a burger . As a result, we’ve got lots of great burger options in LA — enough that it’s worth highlighting the absolute best of the best. Here are the finest spots to grab a burger, no matter where you are in Los Angeles.</p>
+            <p>#HiHo Cheeseburger</p>
+            <p>The same minds that brought you Sugarfish and Uovo (which is right next door) are in charge of HiHo, which serves double-decker cheeseburgers made with wagyu beef from one specific (and delicious) New Zealand farm. The burgers are stacked with lettuce, pickles, ketchup, and onion jam on a white bun — a traditional kick to a leveled-up burger.</p>
+            <p>#Rossoblu</p>
+            <p>The fancy-ish Italian restaurant Rossoblu may be best-known for their pastas, but the Bolo Burger — now available at brunch — could turn that around. Chef Steve Samson’s dishing out a thick-patty ground on a milk bun with slaw and ragu sauce — a sort of sloppy joe-meets-burger masterpiece that’s an excellent way to start a weekend day.</p>
+          </div>
+          <!-- more row -->
+          <h5 class="subscript align-right">
+            <a class="card-more"href="individual-question.html">Read More</a>
+          </h5>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
