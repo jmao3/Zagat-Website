@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Test Webpage</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/bootstrap-social.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -59,8 +61,61 @@
           </div>
           <!-- Button -->
           <div class="btns">
-            <button class="btn btn-outline-primary" type="button" name="follow">Follow</button>
+            <button class="btn btn-outline-primary" type="button" name="follow" data-toggle="modal" data-target="#sign-in">Follow</button>
             <button class="btn btn-outline-primary message-btn"type="button" name="message">Message</button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header p-0 m-0">
+                  <div class="logo-center">
+                    <img class="logo-resize" src="../assets/logo/rectangle.svg" alt="">
+                    <h3 class="logo-reposition gourmet d-inline">Gourmet</h3>
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="text-center">Log In</h3>
+
+                  <form class="my-4">
+                    <input class="form-text" placeholder="Email">
+                  </form>
+                  <form class="my-4">
+                    <input class="form-text" placeholder="Password">
+                  </form>
+                  <button type="button" class="btn btn-primary btn-block log-in">
+                    <h3 class="m-0">Log In</h3>
+                  </button>
+                  <div class="row">
+                    <div class="col social-log-in">
+                      <a class="btn btn-block btn-social btn-facebook d-block">
+                        <i class="fab fa-facebook"></i>
+                        <h5 class="social-log-in-text my-1">Sign in with Facebook</h5>
+                      </a>
+                    </div>
+                    <div class="col social-log-in pr-0">
+                      <a class="btn btn-block btn-social btn-google d-block">
+                        <i class="fab fa-google"></i>
+                        <h5 class="social-log-in-text my-1">Sign in with Google</h5>
+                      </a>
+                    </div>
+                  </div>
+                  <h5 class="subscript text-center">
+                    <a href="#">Sign Up with Email</a>
+                  </h5>
+                  <h5 class="subscript text-center">
+                    <a href="#">Forget Password?</a>
+                  </h5>
+                </div>
+                <div class="modal-footer p-0">
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Posts -->
@@ -199,5 +254,8 @@
       </div>
     </div>
   </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
