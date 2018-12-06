@@ -68,6 +68,10 @@ img{
   background-color: #9B0B37;
   border-color: #9B0B37;
 }
+.btn-primary:active{
+  background-color: #9B0B37 !important;
+  border-color: #9B0B37 !important;
+}
 .btn-outline-primary{
   position: relative;
   bottom: -4px;
@@ -621,4 +625,9 @@ a:hover .fa-times{
 .center-text{
   text-align: center;
   margin: 0;
+}
+.left-nudge{
+  position: relative;
+  left: -42px;
+  top: 2px;
 }
