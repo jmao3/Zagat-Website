@@ -117,6 +117,11 @@ img{
   margin: 0;
   padding: 0;
 }
+.tracking{
+  letter-spacing: 0.1rem;
+}
+
+
 
 
 
@@ -389,7 +394,7 @@ img{
   overflow: hidden;
 }
 .text-box-3{
-  height: 48px;
+  height: 42px;
   overflow: hidden;
 }
 
