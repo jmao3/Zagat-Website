@@ -82,6 +82,7 @@ img{
   height: 36px;
   vertical-align: middle;
   padding: 6px 20px;
+  background-color: white;
 }
 .btn-outline-primary:hover{
   border-color: #b70038;
@@ -97,6 +98,7 @@ img{
   background-color: #b70038 !important;
   border-color: #b70038 !important;
   color: white;
+
 }
 .btn:focus{
   box-shadow: none;
@@ -115,6 +117,7 @@ img{
 }
 .message-btn{
   border: 0;
+  background-color: inherit;
 }
 .message-btn:hover{
   background-color: inherit;
@@ -566,7 +569,7 @@ a:hover .fa-times{
   top: -31px;
 }
 .form-paragraph{
-  height: 400px;
+  height: 300px;
 }
 .log-in{
   height: 50px;
@@ -596,9 +599,50 @@ a:hover .fa-times{
   color: #656666;
   margin: 10px;
 }
-
-
-
+.add-restaurant{
+  height: 100px;
+  background-color: white;
+  border: 1px solid #D0D2D3;
+  position: relative;
+  top: -62px;
+}
+.fa-angle-down{
+  margin-left: 350px;
+  color: #656666;
+}
+.add-restaurant-tag{
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 18px 29px;
+  background-color: white;
+  border: 1px solid #D0D2D3;
+}
+.fa-plus{
+  padding-top: 20px;
+  margin-top:20px;
+  color: #656666;
+}
+.add-one-restaurant{
+  margin: 20px 10px;
+  color: #656666;
+}
+.write-story-modal-footer{
+  position: relative;
+  top: -12px;
+}
+.write-story-modal{
+  height: 650px;
+}
+.write-story-modal-content{
+  height: 650px;
+}
+.write-story-modal-body{
+  position: relative;
+  top: 30px;
+}
 
 /* Others */
 .btns{
