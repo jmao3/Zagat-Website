@@ -94,6 +94,9 @@ img{
 }
 .btn-outline-primary:focus{
   box-shadow: none;
+  background-color: #b70038 !important;
+  border-color: #b70038 !important;
+  color: white;
 }
 .btn:focus{
   box-shadow: none;
